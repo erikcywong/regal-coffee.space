@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAPELL — Aeroponic Coffee Unit Economics × Regal</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">REGAL <b>00078.HK</b> × NAPELL
+      <span class="en"> · Institutional Research</span><span class="zh"> · 机构研究</span></a>
+    <nav class="links">
+      <a href="index.html"><span class="en">Summary</span><span class="zh">摘要</span></a>
+      <a href="financials.html"><span class="en">Financials</span><span class="zh">财务十年</span></a>
+      <a href="balance.html"><span class="en">Balance Sheet</span><span class="zh">资产负债</span></a>
+      <a class="on" href="napell.html"><span class="en">Unit Economics</span><span class="zh">单位经济</span></a>
+      <a href="investment.html"><span class="en">Investment</span><span class="zh">投资建议</span></a>
+      <a href="outlook.html"><span class="en">Outlook</span><span class="zh">展望</span></a>
+      <button class="langbtn" id="langToggle">中文</button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <div class="eyebrow">
+    <span class="tag gold">03 · <span class="en">Aeroponic Coffee Unit Economics</span><span class="zh">雾化水培咖啡单位经济</span></span>
+    <span class="tag">napell.space · <span class="en">Operational Cost Analysis</span><span class="zh">运营成本分析</span></span>
+  </div>
+  <h1 class="en">From Cost Structure to Industrial Innovation — Inside a Hotel Group</h1>
+  <h1 class="zh">从成本结构到产业化创新 —— 而且就长在酒店集团里</h1>
+  <p class="lede en">The NAPELL Aeroponic Coffee Cultivation System replaces soil-based nurseries with a precision nutrient-mist pipeline: a 4-month growth cycle, three harvests per year, year-round output under controlled climate. For Regal, the decisive variable is distribution: a 73.5%-margin product sold into the Group's own 14 hotels, F&amp;B outlets and lounges — a captive market no standalone agtech venture can replicate.</p>
+  <p class="lede zh">NAPELL雾化水培咖啡种植系统以精密营养雾管道取代土壤苗圃：4个月生长周期、年产3批、可控气候下全年产出。对富豪而言，决定性变量是渠道：73.5%毛利率的产品，卖进集团自有14家酒店、餐饮与行政酒廊——这是任何独立农业科技创业公司都无法复制的内嵌市场。</p>
+  <div class="rule"></div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="secno">3.1</span><h2 class="sec"><span class="en">The Numbers (Per Farm)</span><span class="zh">核心数字（单农场）</span></h2></div>
+    <div class="econ">
+      <div class="eco"><div class="v">US$414K</div><div class="l"><span class="en">Initial investment (≈HK$3.23m)</span><span class="zh">初始投资（≈HK$323万）</span></div></div>
+      <div class="eco"><div class="v">615K</div><div class="l"><span class="en">Seedlings per year</span><span class="zh">年产幼苗（株）</span></div></div>
+      <div class="eco"><div class="v">US$2.26M</div><div class="l"><span class="en">Annual revenue (≈HK$17.6m)</span><span class="zh">年收入（≈HK$1,763万）</span></div></div>
+      <div class="eco"><div class="v">73.5%</div><div class="l"><span class="en">Gross margin (hotels FY2025: 29.4%)</span><span class="zh">毛利率（酒店FY2025仅29.4%）</span></div></div>
+      <div class="eco"><div class="v">US$0.97</div><div class="l"><span class="en">Cost per seedling (≈¥6.61)</span><span class="zh">单株成本（≈¥6.61）</span></div></div>
+      <div class="eco"><div class="v">US$3.68</div><div class="l"><span class="en">Price per seedling (≈¥25)</span><span class="zh">单株售价（≈¥25）</span></div></div>
+      <div class="eco"><div class="v">4 <span class="en">months</span><span class="zh">个月</span></div><div class="l"><span class="en">Growth cycle · 3 batches/yr</span><span class="zh">生长周期 · 年产3批</span></div></div>
+      <div class="eco"><div class="v">10.8 <span class="en">acres</span><span class="zh">英亩</span></div><div class="l"><span class="en">Greenhouse area · 81 systems</span><span class="zh">温室面积 · 81套培育系统</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="secno">3.2</span><h2 class="sec"><span class="en">Cost &amp; Value Chain</span><span class="zh">成本与价值链</span></h2></div>
+    <div class="grid g2">
+      <div class="chart">
+        <div class="ct"><span class="en">Per-Seedling Spread (US$)</span><span class="zh">单株价差（美元）</span></div>
+        <div class="cs"><span class="en">US$3.68 price vs US$0.97 cost — a 73.5% gross margin</span><span class="zh">售价US$3.68 vs 成本US$0.97——73.5%毛利率</span></div>
+        <div id="chartSpread" class="cht"></div>
+      </div>
+      <div class="card">
+        <h3 class="en"><span class="blue">The climate thesis</span></h3>
+        <h3 class="zh"><span class="blue">气候逻辑</span></h3>
+        <p class="en">ICO research projects global land suitable for coffee could contract by up to <b>50% by 2050</b>, threatening the US$200bn+ coffee economy and 125 million livelihoods. Every displaced hectare creates seedling demand; every climate shock accelerates replanting with resilient, tissue-cultured stock. Demand here is climate-driven — uncorrelated with Hong Kong hotel RevPAR or the mainland-traveler spending shift.</p>
+        <p class="zh">ICO研究预测，气候压力下2050年全球适宜咖啡种植的土地面积可能缩减<b>高达50%</b>，威胁2,000亿美元以上的咖啡经济与1.25亿人生计。每一公顷退出的种植地都在创造幼苗需求；每一次气候冲击都在加速抗逆组培种苗的补种。这里的需求由气候驱动——与香港酒店RevPAR或北上消费迁移完全无关。</p>
+      </div>
+    </div>
+    <div class="flow">
+      <div class="fnode"><b><span class="en">Climate-driven demand</span><span class="zh">气候驱动需求</span></b><span class="en">ICO: up to −50% coffee land by 2050</span><span class="zh">ICO预测2050年种植面积或减50%</span></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><b><span class="en">Tissue culture + aeroponics</span><span class="zh">组培 + 雾培</span></b><span class="en">Soil-free, high-density, year-round, drought-resilient</span><span class="zh">无土、高密度、全年产出、抗旱避灾</span></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><b><span class="en">Seedlings + in-house brand</span><span class="zh">幼苗 + 自有品牌</span></b><span class="en">14 captive hotels · zero acquisition cost</span><span class="zh">14家内嵌酒店 · 零获客成本</span></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><b><span class="en">Carbon assets</span><span class="zh">碳资产</span></b><span class="en">Per-seedling footprint data → credits &amp; REIT green finance</span><span class="zh">每株碳足迹数据 → 碳信用与REIT绿色融资</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="secno">3.3</span><h2 class="sec"><span class="en">Why This Fits Regal's Asset Base</span><span class="zh">为何契合富豪的资产禀赋</span></h2></div>
+    <div class="grid tldr" style="margin-bottom:26px;">
+      <div class="card"><h3 class="en">14 hotels = built-in distribution</h3><h3 class="zh">14家酒店 = 自带渠道</h3>
+        <p class="en">Five Regal hotels, four iclub hotels via Regal REIT (74.9% owned), Regala Skycity at the airport, plus managed properties — every lobby, lounge and banquet is a sales point for house-brand coffee and for seedlings to regional buyers. First tranche of output sells at zero customer-acquisition cost.</p>
+        <p class="zh">透过富豪产业信托（持股74.9%）持有的5家富豪酒店与4家富荟酒店、机场Regala Skycity，及管理酒店——每一家大堂、酒廊与宴会厅都是自有品牌咖啡和区域买家幼苗的销售点。首批产出零获客成本。</p></div>
+      <div class="card"><h3 class="en">Spaces that earn nothing today</h3><h3 class="zh">今天不产生收入的空间</h3>
+        <p class="en">Hotel podiums, rooftops and back-of-house plots across the portfolio can host greenhouses without land acquisition — removing the largest capex item in the unit model. Airport-corridor sites (Regala Skycity, Terminal 2 now operational) suit agri-tourism add-ons for transit guests.</p>
+        <p class="zh">组合内酒店的裙楼、天台与后场地块可改建温室而无需新购土地——直接削减单位模型中最大的资本开支项。机场走廊物业（Regala Skycity，二号客运大楼已启用）适合为中转旅客增设农旅体验。</p></div>
+      <div class="card"><h3 class="en">A REIT built for green money</h3><h3 class="zh">为绿色资金而生的REIT</h3>
+        <p class="en">Regal REIT (01881) is a listed vehicle whose funding cost already swings with HIBOR. A quantifiable carbon-data asset and a climate-resilience narrative position the REIT for green loans and sustainability-linked refinancing — every 100bp saved on the Group's HK$14.6bn debt is ~HK$146m.</p>
+        <p class="zh">富豪产业信托（01881）是上市平台，融资成本本就随HIBOR波动。可量化的碳数据资产与气候韧性叙事，为REIT争取绿色贷款与可持续发展挂钩再融资创造条件——集团146亿港元债务每降100个基点≈1.46亿港元。</p></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><div class="disc"><b class="en">Disclaimer</b><b class="zh">免责声明</b><span class="en">: NAPELL unit economics are derived from operational cost analysis on napell.space; revenue projections are estimates based on current market conditions (FX reference: US$1 = ¥6.80 / ≈HK$7.8). ICO 2050 land-contraction projection is a research scenario, not a forecast certainty. This material does not constitute investment advice.</span><span class="zh">：NAPELL单位经济数据来自napell.space运营成本分析；收入预测为基于当前市场状况的估算（汇率参考：1美元=6.80元人民币 / ≈7.8港元）。ICO2050年土地缩减预测为研究情景而非确定性预测。本材料不构成投资建议。</span></div></div>
+
+<footer><div class="wrap"><span class="en">Data source: napell.space — Aeroponic Coffee Cultivation System (initial investment, output, cost &amp; pricing metrics, 2026); Regal Hotels 2025 results for hotel portfolio and financials. Generated 2026-09-10.</span><span class="zh">数据来源：napell.space——雾化水培咖啡种植系统（初始投资、产出、成本与定价指标，2026）；富豪酒店2025年业绩（酒店组合与财务数据）。生成时间：2026-09-10。</span></div></footer>
+
+<script src="assets/js/i18n.js"></script>
+<script>
+function L(en, zh) { return (window.FEC_LANG && window.FEC_LANG() === "zh") ? zh : en; }
+function render() {
+  var el = document.getElementById("chartSpread");
+  if (!el) return;
+  echarts.dispose(el);
+  echarts.init(el).setOption({
+    backgroundColor: "transparent",
+    textStyle: { color: "#c9cdd1" },
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
+    grid: { left: 60, right: 60, top: 30, bottom: 30 },
+    xAxis: { type: "value", name: "US$", axisLabel: { color: "#71767b" }, splitLine: { lineStyle: { color: "#1c2530" } } },
+    yAxis: { type: "category", data: [L("Sale Price","售价"), L("Cost","成本")], axisLabel: { color: "#c9cdd1" } },
+    series: [{
+      type: "bar", barMaxWidth: 40,
+      data: [
+        { value: 3.68, itemStyle: { color: "#00ba7c", borderRadius: [0,4,4,0] } },
+        { value: 0.97, itemStyle: { color: "#f4212e", borderRadius: [0,4,4,0] } }
+      ],
+      label: { show: true, position: "right", color: "#e7e9ea", formatter: "${c}" }
+    }],
+    graphic: [{
+      type: "text", left: "center", top: 6,
+      style: { text: L("Gross Margin 73.5%","毛利率 73.5%"), fill: "#ffd400", fontSize: 14, fontWeight: "bold" }
+    }]
+  });
+}
+document.addEventListener("DOMContentLoaded", render);
+window.addEventListener("langchange", function () { setTimeout(render, 0); });
+</script>
+</body>
+</html>
