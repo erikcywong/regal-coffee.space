@@ -14,7 +14,7 @@ body{-webkit-font-smoothing:antialiased;}
 /* ── header ── */
 header{position:sticky;top:0;z-index:50;background:rgba(6,8,10,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);}
 .nav{display:flex;align-items:center;justify-content:space-between;height:88px;}
-.logo{font-weight:800;font-size:clamp(26px,3.2vw,38px);line-height:1;text-transform:uppercase;letter-spacing:2.5px;color:#ffffff;text-decoration:none;white-space:nowrap;font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;transition:.15s;}
+.logo{font-weight:800;font-size:clamp(26px,3.2vw,38px);line-height:1;text-transform:uppercase;letter-spacing:2.5px;color:#ffffff;text-decoration:none;white-space:nowrap;font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;transition:.15s;margin-left:-6px;align-self:center;}
 .logo:hover{color:var(--accent);}
 .logo b{color:var(--accent);font-weight:800;}
 nav.links{display:flex;align-items:center;gap:2px;}
